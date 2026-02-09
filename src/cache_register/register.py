@@ -55,7 +55,7 @@ class Register[T]:
 
         return _
 
-    def get(self, key: str) -> type | None:
+    def get(self, key: str) -> T | None:
         assert self._name in _global_dict_register, (
             f"'{self._name}' is not in the list of known registers."
         )
